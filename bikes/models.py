@@ -2,6 +2,12 @@ from django.db import models
 
 
 class Bike(models.Model):
+    bike_model = models.CharField(
+        'модель велосипеда',
+        max_length=50,
+        unique=True,
+        help_text='укажите модель велосипеда',
+    )
     serial_number = models.CharField(
         'серийный номер',
         max_length=25,
