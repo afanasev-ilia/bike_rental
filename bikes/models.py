@@ -9,7 +9,7 @@ class Bike(models.Model):
         help_text='укажите серийный номер',
     )
     is_rented = models.BooleanField(
-        'статус аренды',
+        'статус аренды (арендован)',
         default=False,
         help_text='укажите статус аренды',
     )
