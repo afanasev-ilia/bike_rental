@@ -1,13 +1,22 @@
 from rest_framework import serializers
 
-from bikes.models import Bike
+from rental.models import Rental
 
 
-class BikeSerializer(serializers.ModelSerializer):
+class RentalSerializer(serializers.ModelSerializer):
+
     class Meta:
-        model = Bike
+        model = Rental
         fields = (
-            'bike_model',
-            'serial_number',
-            'rental_price',
+            'renter',
+            'bike',
+            'start_time',
+            'end_time',
+            'cost',
+        )
+        read_only_fields = (
+            'renter',
+            'start_time',
+            'end_time',
+            'cost',
         )

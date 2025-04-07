@@ -11,3 +11,4 @@ class BikeSerializer(serializers.ModelSerializer):
             'serial_number',
             'rental_price',
         )
+

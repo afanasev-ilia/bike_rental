@@ -17,8 +17,7 @@ class Rental(models.Model):
     )
     bike = models.ForeignKey(
         Bike,
-        on_delete=models.SET_NULL,
-        null=True,
+        on_delete=models.CASCADE,
         related_name='rentals',
         verbose_name='велосипед',
         help_text='укажите велосипед',
