@@ -30,8 +30,8 @@ Django 4.2
 
     Для PostgreSQL укажите свои параметры:
 
-    ``` python
-    Copy
+    ```
+    python
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
