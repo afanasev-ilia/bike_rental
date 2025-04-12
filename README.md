@@ -30,8 +30,7 @@ Django 4.2
 
     Для PostgreSQL укажите свои параметры:
 
-    ```
-    python
+    ```python
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
@@ -44,17 +43,18 @@ Django 4.2
     }
     ```
 5. Примените миграции:
-bash
-Copy
-python manage.py migrate
+    ```bash
+    python manage.py migrate
+    ```
 6. Создайте суперпользователя (для доступа в админку):
-bash
-Copy
-python manage.py createsuperuser
+    ```bash
+    python manage.py createsuperuser
+    ```
 7. Запустите сервер:
-bash
-Copy
-python manage.py runserver
+    ```bash
+    python manage.py runserver
+    ```
+    
 Откройте в браузере:
 
 Основное приложение: http://127.0.0.1:8000
